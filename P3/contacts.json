@@ -1,0 +1,29 @@
+[
+  {
+    "name": "re",
+    "mobile": "ter"
+  },
+  {
+    "name": "ter",
+    "mobile": "er"
+  },
+  {
+    "name": "res",
+    "mobile": "08080"
+  },
+  {
+    "name": "tr",
+    "mobile": "re",
+    "mail": "res"
+  },
+  {
+    "name": "er",
+    "mobile": "re",
+    "mail": "wer"
+  },
+  {
+    "name": "re",
+    "mobile": "er",
+    "mail": "res"
+  }
+]
