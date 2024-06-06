@@ -16,8 +16,8 @@ const question = (query) => new Promise((resolve) => rl.question(query, resolve)
   const contact = { name, mobile, mail };
   
   try {
-    const file = await fs.readFile('test.json', 'utf8').catch(() => '[]');
-    const contacts = JSON.parse(file);
+    const fileContent = await fs.readFile('test.json', 'utf8').catch(() => '[]');
+    const contacts = fileContent.trim() ? JSON.parse(fileContent) : [];
     contacts.push(contact);
     await fs.writeFile('test.json', JSON.stringify(contacts, null, 2));
     console.log('Terimakasih');
