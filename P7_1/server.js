@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
 });
 // about page
 app.get('/about', function(req, res) {
-    res.render('pages/about');
+    res.render('about');
 });
 
 app.listen(8080);
