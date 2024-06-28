@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= data.title %>
+    </title>
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+    
+        <div
+            class=" bg-emerald-500   h-full min-h-[93vh] flex justify-center items-center px-20 py-10" style="color: black;">
+
+            <div class="w-full">
+                <main><%- body %></main>
+      
+            </div>
+           
+        </div>
+
+
+        <%- include('../partials/footer') %>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+
+
+<%- defineContent('scripts') %>
+
+</html>

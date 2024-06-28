@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold mb-4">Contacts</h1>
+      <a href="/contacts/create" class="btn btn-primary mb-4">Create Contact</a>
+      <table class="table-auto w-full">
+        <thead>
+          <tr>
+            <th class="px-4 py-2">Nama Lengkap</th>
+            <th class="px-4 py-2">Nomor Telepon</th>
+            <th class="px-4 py-2">Email</th>
+            <th class="px-4 py-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% contacts.forEach(contact => { %>
+          <tr>
+            <td class="border px-4 py-2"><%= contact.nama_lengkap %></td>
+            <td class="border px-4 py-2"><%= contact.nomor_telepon %></td>
+            <td class="border px-4 py-2"><%= contact.email %></td>
+            <td class="border px-4 py-2">
+              <a href="/contacts/<%= contact.id %>/edit" class="btn btn-secondary">Edit</a>
+              <form action="/contacts/<%= contact.id %>/delete" method="POST" class="inline-block">
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
