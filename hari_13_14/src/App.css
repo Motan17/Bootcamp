@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0a0a; /* Adjust the color as needed */
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  color: white; /* Adjust the color as needed */
+  padding-left: 10px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+  padding: 10px;
+}
+
+.navbar-links button {
+  background-color: black; /* Adjust the button background color as needed */
+  color: yellow; /* Adjust the button text color as needed */
+  border: none;
+  padding: 10px 20px; /* Adjust the padding as needed */
+  cursor: pointer;
+}
+
+.navbar-links button:hover {
+  background-color:yellow; /* Adjust the button background color as needed */
+  color: rgb(0, 0, 0); /* Adjust the hover background color as needed */
+}
